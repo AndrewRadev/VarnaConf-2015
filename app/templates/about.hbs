@@ -19,11 +19,11 @@
     <div class="alert alert-success">
       {{commentMessage}}
     </div>
-  {{else}}
-    <form {{action 'postComment' on='submit'}}>
-      <input type="submit" value="Post">
-      <p>{{input type="text" value=email class="form-control" placeholder="Email"}}</p>
-      <p>{{textarea value=body class="form-control" placeholder="Comment body" rows="20"}}</p>
-    </form>
   {{/if}}
+
+  <form {{action 'postComment' on='submit'}}>
+    <input type="submit" value="Post">
+    <p>{{input type="text" value=model.email class="form-control" placeholder="Email"}}</p>
+    <p>{{textarea value=model.body class="form-control" placeholder="Comment body" rows="20"}}</p>
+  </form>
 </div>
