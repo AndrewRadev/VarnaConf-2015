@@ -6,12 +6,13 @@
 </div>
 
 <div class="comments">
-  <div class="alert alert-success {{if commentMessage 'fade-show' 'fade-hide'}}">
+  <div class="alert alert-success {{unless commentMessage 'hide'}}">
     {{commentMessage}}
+    <a href class="pull-right" {{action 'removeMessage'}}>X</a>
   </div>
 
   <form {{action 'postComment' on='submit'}}>
-    <input type="submit" value="Post">
+    <p><input type="submit" value="Post"></p>
     <p>{{input type="text" value=model.email class="form-control" placeholder="Email"}}</p>
     <p>{{textarea value=model.body class="form-control" placeholder="Comment body" rows="20"}}</p>
   </form>
