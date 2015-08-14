@@ -1,0 +1,15 @@
+<div class="jumbotron">
+  {{#if numberOfItemsMax}}
+    <h1>THE SLIDEST</h1>
+  {{else}}
+    <h1>Slider</h1>
+  {{/if}}
+</div>
+
+{{input type="range" min=0 max=10 value=numberOfItems}}
+
+<ul>
+  {{#each numbers as |n|}}
+    <li>Example number {{n}}</li>
+  {{/each}}
+</ul>

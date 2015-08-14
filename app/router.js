@@ -7,8 +7,9 @@ var Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('about');
+  this.route('slider');
   this.resource('users', function() {
-    this.route('new')
+    this.route('new');
   });
 });
 
