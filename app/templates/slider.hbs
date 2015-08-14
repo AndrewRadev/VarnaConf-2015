@@ -1,6 +1,8 @@
 <div class="jumbotron">
-  {{#if numberOfItemsMax}}
+  {{#if isMaxNumberOfItems}}
     <h1>THE SLIDEST</h1>
+  {{else if isMinNumberOfItems}}
+    <h1>slide</h1>
   {{else}}
     <h1>Slider</h1>
   {{/if}}
@@ -10,6 +12,6 @@
 
 <ul>
   {{#each numbers as |n|}}
-    <li>Example number {{n}}</li>
+    <li>Slide level: {{n}}</li>
   {{/each}}
 </ul>

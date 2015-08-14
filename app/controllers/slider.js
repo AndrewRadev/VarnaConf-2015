@@ -7,8 +7,11 @@ export default Ember.Controller.extend({
     return _.range(0, this.get('numberOfItems'));
   }.property('numberOfItems'),
 
-  numberOfItemsMax: function() {
-    console.log(this.get('numberOfItems'));
+  isMaxNumberOfItems: function() {
     return (this.get('numberOfItems') === '10');
+  }.property('numberOfItems'),
+
+  isMinNumberOfItems: function() {
+    return (this.get('numberOfItems') === '0');
   }.property('numberOfItems'),
 });
