@@ -2,14 +2,24 @@
   <h1>Register</h1>
 </div>
 
-<form {{action 'postComment' on='submit'}}>
+
+
+<form {{action 'createUser' on='submit'}}>
+  <h3>Login info:</h3>
+
   <p>{{input type="text" value=model.email class="form-control" placeholder="Email"}}</p>
   <p>{{input type="password" value=model.password class="form-control" placeholder="Password"}}</p>
   <p>{{input type="password" value=model.passwordConfirmation class="form-control" placeholder="Repeat password"}}</p>
 
   <hr>
 
+  <h3>Hi, my name is: {{model.fullName}}</h3>
+
   <p>{{input type="text" value=model.firstName class="form-control" placeholder="First Name"}}</p>
   <p>{{input type="text" value=model.lastName class="form-control" placeholder="Last Name"}}</p>
-  <p>{{input type="text" value=model.bio class="form-control" placeholder="Biography"}}</p>
+  <p>{{textarea value=model.bio class="form-control" placeholder="Biography"}}</p>
+
+  <hr>
+
+  <p><input type="submit" value="Register"></p>
 </form>
