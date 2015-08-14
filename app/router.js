@@ -9,7 +9,11 @@ Router.map(function() {
   this.route('about');
   this.route('slider');
   this.resource('users', function() {
-    this.route('new');
+    this.route('new', function() {
+      this.route('login-info');
+      this.route('name');
+      this.route('details');
+    });
   });
 });
 

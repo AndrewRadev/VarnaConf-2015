@@ -19,3 +19,13 @@
   -webkit-transition: visibility 0s .2s, opacity .2s linear;
   -moz-transition:    visibility 0s .2s, opacity .2s linear;
 }
+
+.user-card .avatar {
+  margin-top: 20px;
+  float: left;
+}
+
+.user-card .info {
+  margin-left: 30px;
+  float: left;
+}

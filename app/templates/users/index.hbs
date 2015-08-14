@@ -4,6 +4,10 @@
 
 <ul>
   {{#each model as |user|}}
-    <li>{{user.fullName}}, login as: {{user.email}}/{{user.password}}</li>
+    <li>
+      <img src={{user.avatarUrl}} width=20 />
+      {{user.fullName}},
+      login as: {{user.email}}/{{user.password}}
+    </li>
   {{/each}}
 </ul>

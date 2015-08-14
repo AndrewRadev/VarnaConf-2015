@@ -1,0 +1,9 @@
+{{user-card user=model}}
+
+<p>{{input type="text" value=model.email class="form-control" placeholder="Email"}}</p>
+<p>{{input type="password" value=model.password class="form-control" placeholder="Password"}}</p>
+
+<button disabled="disabled">Back</button>
+<button {{action 'nextStep'}}>Next</button>
+
+<button {{action 'createUser'}} class="pull-right">Create user</button>

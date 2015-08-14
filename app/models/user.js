@@ -7,6 +7,7 @@ export default DS.Model.extend({
   lastName:  DS.attr('string'),
   bio:       DS.attr('string'),
   birthday:  DS.attr('date'),
+  avatarUrl: DS.attr('string'),
 
   fullName: function() {
     var firstName = this.get('firstName') || '';

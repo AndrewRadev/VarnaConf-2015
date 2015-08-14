@@ -1,0 +1,9 @@
+{{user-card user=model}}
+
+<p>{{input type="text" value=model.avatarUrl class="form-control" placeholder="GIVE ME BACK MY FACE!"}}</p>
+<p>{{textarea value=model.bio class="form-control" placeholder="Biography"}}</p>
+
+<button {{action 'prevStep'}}>Back</button>
+<button disabled="disabled">Next</button>
+
+<button {{action 'createUser'}} class="pull-right">Create user</button>
