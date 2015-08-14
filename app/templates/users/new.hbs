@@ -2,14 +2,11 @@
   <h1>Register</h1>
 </div>
 
-
-
 <form {{action 'createUser' on='submit'}}>
   <h3>Login info:</h3>
 
   <p>{{input type="text" value=model.email class="form-control" placeholder="Email"}}</p>
   <p>{{input type="password" value=model.password class="form-control" placeholder="Password"}}</p>
-  <p>{{input type="password" value=model.passwordConfirmation class="form-control" placeholder="Repeat password"}}</p>
 
   <hr>
 

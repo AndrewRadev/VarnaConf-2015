@@ -1,0 +1,9 @@
+<div class="jumbotron">
+  <h1>Users</h1>
+</div>
+
+<ul>
+  {{#each model as |user|}}
+    <li>{{user.fullName}}, login as: {{user.email}}/{{user.password}}</li>
+  {{/each}}
+</ul>
