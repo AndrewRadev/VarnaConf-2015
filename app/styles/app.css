@@ -1,3 +1,7 @@
+.jumbotron {
+  padding-bottom: 15px;
+}
+
 .fade-show {
   visibility: visible;
   opacity: 1;
