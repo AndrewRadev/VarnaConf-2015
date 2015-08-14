@@ -1,0 +1,13 @@
+{
+  "app/templates/*.hbs": {
+    "alternate": "app/controllers/{}.js",
+    "type": "template"
+  },
+  "app/controllers/*.js": {
+    "alternate": "app/templates/{}.hbs",
+    "type": "controller"
+  },
+  "app/routes/*.js": {
+    "type": "route"
+  }
+}
