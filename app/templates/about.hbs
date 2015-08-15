@@ -1,0 +1,20 @@
+<div class="jumbotron">
+  <h1>About us</h1>
+
+  <p>
+    Lorem ipsum.
+  </p>
+</div>
+
+<div class="comments">
+  <div class="alert alert-success {{unless commentMessage 'hide'}}">
+    {{commentMessage}}
+    <a href class="pull-right" {{action 'removeMessage'}}>X</a>
+  </div>
+
+  <form {{action 'postComment' on='submit'}}>
+    <p><input type="submit" value="Post"></p>
+    <p>{{input type="text" value=email class="form-control" placeholder="Email"}}</p>
+    <p>{{textarea value=body class="form-control" placeholder="Comment body" rows="20"}}</p>
+  </form>
+</div>
