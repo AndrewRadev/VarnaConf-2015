@@ -1,0 +1,13 @@
+.jumbotron {
+  padding-bottom: 15px;
+}
+
+.user-card .avatar {
+  margin-top: 20px;
+  float: left;
+}
+
+.user-card .info {
+  margin-left: 30px;
+  float: left;
+}

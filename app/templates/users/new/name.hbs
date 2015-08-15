@@ -1,0 +1,9 @@
+{{user-card user=model}}
+
+<p>{{input type="text" value=model.firstName class="form-control" placeholder="First Name"}}</p>
+<p>{{input type="text" value=model.lastName class="form-control" placeholder="Last Name"}}</p>
+
+<button {{action 'prevStep'}}>Back</button>
+<button {{action 'nextStep'}}>Next</button>
+
+<button {{action 'createUser'}} class="pull-right">Create user</button>

@@ -1,0 +1,21 @@
+<div class="jumbotron user-card clearfix">
+  <div class="avatar">
+    {{#if user.avatarUrl}}
+      <img src={{user.avatarUrl}} width="100" />
+    {{else}}
+      <img src="/images/default_avatar.jpg" width="100" />
+    {{/if}}
+  </div>
+
+  <div class="info">
+    <h3>Hi, my name is {{user.fullName}}</h3>
+
+    {{#if user.email}}
+      {{#if user.password}}
+        <h4>Log in as {{user.email}}/{{user.password}}</h4>
+      {{/if}}
+    {{/if}}
+
+    <p>{{user.bio}}</p>
+  </div>
+</div>
