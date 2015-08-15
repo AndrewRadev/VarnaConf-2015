@@ -7,10 +7,12 @@
 </div>
 
 <div class="comments">
-  <div class="alert alert-success {{unless commentMessage 'hide'}}">
-    {{commentMessage}}
-    <a href class="pull-right" {{action 'removeMessage'}}>X</a>
-  </div>
+  {{#if commentMessage}}
+    <div class="alert alert-success">
+      {{commentMessage}}
+      <a href class="pull-right" {{action 'removeMessage'}}>X</a>
+    </div>
+  {{/if}}
 
   <form {{action 'postComment' on='submit'}}>
     <p><input type="submit" value="Post"></p>
