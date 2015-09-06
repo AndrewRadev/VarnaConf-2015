@@ -1,7 +1,16 @@
-# Demo-app
+# VarnaConf 2015 Demo App
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This is a simple app with that shows off Ember.js. It was used as a demo at [VarnaConf 2015](http://varnaconf.com/archive/2015). There are five git tags that show the app at various stages of its development:
+
+- [01-beginning](/tree/01-beginning)
+- [02-initial-routes](/tree/02-initial-routes)
+- [03-working-comment-form-slider](/tree/03-working-comment-form-slider)
+- [04-registration-form](/tree/04-registration-form)
+- [05-registration-wizard](/tree/05-registration-wizard)
+
+The tags are not very linear, unfortunately, there was a lot of branching out and correcting. Still, they're what I used to show the logical evolution of the app, even if they aren't perfectly chronological.
+
+The presentation is published [here](https://speakerdeck.com/andrewradev/ember-dot-js-za-old-school-web-proghramisti-varnaconf-2015), but the slides themselves are not particularly instructive without the talking :).
 
 ## Prerequisites
 
@@ -24,24 +33,6 @@ You will need the following things properly installed on your computer.
 
 * `ember server`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
-
-### Code Generators
-
-Make use of the many generators for code, try `ember help generate` for more details
-
-### Running Tests
-
-* `ember test`
-* `ember test --server`
-
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
 
 ## Further Reading / Useful Links
 
