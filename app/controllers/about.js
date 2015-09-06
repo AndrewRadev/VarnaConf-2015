@@ -4,10 +4,11 @@ export default Ember.Controller.extend({
   actions: {
     postComment: function() {
       var self = this;
-      Ember.$.post('http://localhost:4567/comments', this.get('model'), function() {
+      // just pretend we save this somewhere...
+      setTimeout(function() {
         self.set('model', {});
         self.set('commentMessage', "You've posted a comment!");
-      });
+      }, 500);
     },
 
     removeMessage: function() {
