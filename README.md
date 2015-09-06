@@ -2,11 +2,11 @@
 
 This is a simple app with that shows off Ember.js. It was used as a demo at [VarnaConf 2015](http://varnaconf.com/archive/2015). There are five git tags that show the app at various stages of its development:
 
-- [01-beginning](/tree/01-beginning)
-- [02-initial-routes](/tree/02-initial-routes)
-- [03-working-comment-form-slider](/tree/03-working-comment-form-slider)
-- [04-registration-form](/tree/04-registration-form)
-- [05-registration-wizard](/tree/05-registration-wizard)
+- [01-beginning](https://github.com/AndrewRadev/VarnaConf-2015/tree/01-beginning)
+- [02-initial-routes](https://github.com/AndrewRadev/VarnaConf-2015/tree/02-initial-routes)
+- [03-working-comment-form-slider](https://github.com/AndrewRadev/VarnaConf-2015/tree/03-working-comment-form-slider)
+- [04-registration-form](https://github.com/AndrewRadev/VarnaConf-2015/tree/04-registration-form)
+- [05-registration-wizard](https://github.com/AndrewRadev/VarnaConf-2015/tree/05-registration-wizard)
 
 The tags are not very linear, unfortunately, there was a lot of branching out and correcting. Still, they're what I used to show the logical evolution of the app, even if they aren't perfectly chronological.
 
